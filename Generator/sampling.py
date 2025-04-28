@@ -26,8 +26,8 @@ def save_sequences(sequences, output_file, charmap):
             f.write(seq_str + '\n')
 
 if __name__ == "__main__":
-    model_path = '/Generator/checkpoint/G.pth'  # 生成器模型保存的路径
-    output_file = '/Generator/samples/SC_short/G.txt'  # 保存生成序列的文件路径
+    model_path = '/Generator/checkpoint/G_SC.pth'  # 生成器模型保存的路径
+    output_file = '/Generator/samples/SC_short/G_SC.txt'  # 保存生成序列的文件路径
     num_samples = 20000  # 需要生成的序列数量
     n_chars = 4  # 字符数量
     seq_len = 80  # 序列长度
